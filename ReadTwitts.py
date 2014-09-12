@@ -10,7 +10,7 @@ This simple class uses python-twitter v1.15 to get a list of tweets in someones 
 '''
 
 class ReadTwitts :
-	def __init__(self, keys, day, month, year, n_twitts=0)
+	def __init__(self, keys, day, month, year, n_twitts=0):
 	'''
 		Inputs:
 			keys: list for OAuth in order [ACCESS_TOKEN_KEY, ACCESS_TOKEN_SECRET, CONSUMER_KEY, CONSUMER_SECRET]
