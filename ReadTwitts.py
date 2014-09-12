@@ -20,7 +20,7 @@ class ReadTwitts :
 			n_tweets: will get a maximum of n_twits
 	'''
 		account = tw.Twitter(auth=tw.OAuth(keys[0],keys[1],keys[2],keys[3]))
-		self.dt_look = dt.date(year,month,day)
+		self.dt_look = dt(year,month,day).date()
 		list = account.statuses.home_timeline(count=n_twitts)
 		self.twitts = []
 		for t in list:
