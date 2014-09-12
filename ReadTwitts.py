@@ -27,4 +27,4 @@ class ReadTwitts :
 			#Since Twitter does not use timezone and sime versions of datetime has errors with timezone, it's readed as +0000
 			dt_twitt = dt.strptime(t['created_at'],'%a %b %d %H:%M:%S +0000 %Y')
 			if (dt_twitt.date() == self.dt_look):
-				self.twitts.append([t['created_at'],t['user'] ['screen_name'], t['texto']])
+				self.twitts.append([t['created_at'],t['user'] ['screen_name'], t['text']])
